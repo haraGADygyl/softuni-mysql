@@ -1,3 +1,5 @@
-SELECT COUNT(`price`) AS `Appetizers count`
+SELECT COUNT(`category_id`) AS `Appetizers count`
 FROM `products`
-WHERE `category_id` = 2 AND `price` > 8;
+WHERE `price` > 8
+GROUP BY `category_id`
+HAVING `category_id` = 2;
