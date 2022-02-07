@@ -36,7 +36,7 @@ FOREIGN KEY (`category_id`)
 REFERENCES categories(`id`)
 );
 
-CREATE TABLE cources(
+CREATE TABLE courses(
 `id` INT PRIMARY KEY AUTO_INCREMENT,
 `from_address_id` INT NOT NULL,
 `start` DATETIME NOT NULL,
