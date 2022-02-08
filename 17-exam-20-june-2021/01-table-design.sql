@@ -1,21 +1,21 @@
-CREATE TABLE addresses(
+CREATE TABLE `addresses`(
 `id` INT PRIMARY KEY AUTO_INCREMENT,
 `name` VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE categories(
+CREATE TABLE `categories`(
 `id` INT PRIMARY KEY AUTO_INCREMENT,
 `name` VARCHAR(10) NOT NULL
 );
 
 
-CREATE TABLE clients(
+CREATE TABLE `clients`(
 `id` INT PRIMARY KEY AUTO_INCREMENT,
 `full_name` VARCHAR(50) NOT NULL,
 `phone_number` VARCHAR(20) NOT NULL
 );
 
-CREATE TABLE drivers(
+CREATE TABLE `drivers`(
 `id` INT PRIMARY KEY AUTO_INCREMENT,
 `first_name` VARCHAR(30) NOT NULL,
 `last_name` VARCHAR(30) NOT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE drivers(
 `rating` FLOAT DEFAULT 5.5
 );
 
-CREATE TABLE cars(
+CREATE TABLE `cars`(
 `id` INT PRIMARY KEY AUTO_INCREMENT,
 `make` VARCHAR(20) NOT NULL,
 `model` VARCHAR(20),
@@ -36,7 +36,7 @@ FOREIGN KEY (`category_id`)
 REFERENCES categories(`id`)
 );
 
-CREATE TABLE courses(
+CREATE TABLE `courses`(
 `id` INT PRIMARY KEY AUTO_INCREMENT,
 `from_address_id` INT NOT NULL,
 `start` DATETIME NOT NULL,
@@ -54,7 +54,7 @@ FOREIGN KEY (`client_id`)
 REFERENCES clients(`id`)
 );
 
-CREATE TABLE cars_drivers(
+CREATE TABLE `cars_drivers`(
 `car_id` INT,
 `driver_id` INT,
 CONSTRAINT pk_cars_drivers

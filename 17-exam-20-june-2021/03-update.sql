@@ -1,4 +1,4 @@
-UPDATE cars 
+UPDATE `cars`
 SET 
     `condition` = 'C'
 WHERE
