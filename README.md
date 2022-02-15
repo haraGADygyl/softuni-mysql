@@ -1,4 +1,4 @@
-## My solutions to the problems in the following [SoftUni](https://softuni.bg) courses:
+## My solutions to the problems in the following [SoftUni](https://softuni.bg) course:
 
 - ### MySQL January 2022
   Score: 6.00 / 6.00 - [Sertificate](https://softuni.bg/certificates/details/123562/2fcf419f)
